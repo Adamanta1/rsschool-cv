@@ -1,1 +1,10 @@
-<p style="font-size: 35px;">My perfect CV</p>
+<p style="font-size: 200px;">My perfect CV</p>
+
+@font-face {
+    font-family: Montserrat;
+     src: url("assets/fonts/Montserrat-light.ttf");
+   }
+
+* {
+    box-sizing: border-box;
+  }

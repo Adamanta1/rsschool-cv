@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/galaxy.ico">
+    <title>CV</title> <!--Этот тайтл будет в самом верху странички-->
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <main class="main">
+        <div class="container">
+            <section class="section" id="profile">
+                <h1 class="section-title">Elena Brashkina</h1>
+                <p>Aspiring front-end developer</p>
+                <img src="assets/cv photo.jpg" alt="avatar">
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="list">
+                    <li>Location: Togliatti, Russia</li>
+                    <li>Phone: +7 960 845 65 81</li>
+                    <li>E-mail: elena.brashkina2020@gmail.com</li>
+                    <li>Discord: adamanta1</li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>I'm 30 years old and currently I'm working as an English teacher online. I'm interested in coding and would really like to understand it better. Some time ago I even tried out a short online course for beginners, and it helped me a lot. My skills are still far from good, but I'm eager to continue learning and start a new inspiring career in the future. </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="list">
+                    <li>HTMS, CSS</li>
+                    <li>JavaScript Basics</li>
+                    <li>Git, GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>Bachelor of Linguistics</p>
+                <p>Togliatti State University</p>  
+                <p>2011-2015</p>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="list">
+                    <li>Russian - native</li>
+                    <li>English - C1</li>
+                    <li>German - A1</li>
+                </ul>
+            </section>
+        </div>
+    </main>
 
+    <footer class="footer">
+        <div class="container">
+            [My GitHub](https://github.com/Adamanta1)
+            <p>July 2023</p>
+            <img src="assets/rs_school_js.svg" alt="RSSchool logo">
+            <a href="https://rs.school/js/">Learn with us</a>
+        </div>
+    </footer>
 </body>
 </html>
