@@ -110,9 +110,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 15px 20px;
 }
+
+.footer-container div {
+  padding-right: 650px;
+} 
 
 span {
   font-weight: bold;
