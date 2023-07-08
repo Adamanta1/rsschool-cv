@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+alert("Давайте сыграем в игру УГАДАЙ ЧИСЛО.\nНайдите себе достойного соперника и вперед!")
+var answer = parseInt(Math.random() * 100);
+var playerNumber = 1; // переменная хранит информацию о том, чей сейчас ход.
+
+while(true){ 
+
+  var userAnswer = prompt("Ходит игрок " + playerNumber + ".\nУгадайте число от 0 до 100.\nЕсли передумали играть, введите НЕТ, и игра закончится.");
+  userAnswer = userAnswer.toLowerCase();
+
+  if(userAnswer == "нет" && playerNumber == 1){
+       alert("Игрок " + playerNumber + " сдался. Победил игрок 2.");
+       break;     
+  } 
+
+  if(userAnswer == "нет" && playerNumber == 2){
+       alert("Игрок " + playerNumber + " сдался. Победил игрок 1.");
+       break;     
+  } 
+
+  userAnswer = parseInt(userAnswer);
+
+  if(userAnswer == answer){
+       alert("Поздравляю! Победил игрок " + playerNumber + ".");
+       break;
+  }else if(userAnswer > answer){
+       alert("Ваш ответ - " + userAnswer + ". Это слишком большое число.");
+  }else if(userAnswer < answer){
+       alert("Ваш ответ - " + userAnswer + ". Это слишком маленькое число.");
+  }
+
+  if(playerNumber == 1)
+        playerNumber = 2;
+  else
+        playerNumber = 1;
+
+}
+
+/* длинный вариант с отдельной игрой для каждого игрока.
+for(var tryCount1 = 1; tryCount1 > 0; tryCount1++) {
+
+    if(user1Answer == answer1) {
+       alert("Поздравляю, Игрок №1! Вы выиграли!");
+    break;
+    } else if(user1Answer == "Нет" || user1Answer == "нет" || user1Answer == "НЕТ"){
+         alert("Игра для Игрока №1 закончена.")
+    break;
+    } else if(user1Answer > answer1) {
+       user1Answer = prompt("Ваш ответ - " + user1Answer + ". Это слишком большое число.\nХотите попробовать еще раз, Игрок №1?\nЕсли да, введите число от 0 до 100.\nЕсли не хотите продолжать, введите НЕТ, и игра закончится.");
+    } else if(user1Answer < answer1) {
+       user1Answer = prompt("Ваш ответ - " + user1Answer + ". Это слишком маленькое число.\nХотите попробовать еще раз, Игрок №1?\nЕсли да, введите число от 0 до 100.\nЕсли не хотите продолжать, введите НЕТ, и игра закончится.");
+    } 
+}
+
+var answer2 = parseInt(Math.random() * 100);
+var user2Answer = prompt("Игрок №2, угадайте число от 0 до 100.");
+
+for(var tryCount2 = 1; tryCount2 > 0; tryCount2++) {
+
+    if(user2Answer == answer2) {
+       alert("Поздравляю, Игрок №2! Вы выиграли!");
+    break;                
+    } else if(user2Answer == "Нет" || user2Answer == "нет" || user2Answer == "НЕТ"){
+        alert("Игра для Игрока №2 закончена.")
+    break;
+    } else if(user2Answer > answer2) {
+       user2Answer = prompt("Ваш ответ - " + user2Answer + ". Это слишком большое число.\nХотите попробовать еще раз, Игрок №2?\nЕсли да, введите число от 0 до 100.\nЕсли не хотите продолжать, введите НЕТ, и игра закончится.");
+    } else if(user2Answer < answer2) {
+       user2Answer = prompt("Ваш ответ - " + user2Answer + ". Это слишком маленькое число.\nХотите попробовать еще раз, Игрок №2?\nЕсли да, введите число от 0 до 100.\nЕсли не хотите продолжать, введите НЕТ, и игра закончится.");                   
+    } 
+} 
+*/
+
+</script>
