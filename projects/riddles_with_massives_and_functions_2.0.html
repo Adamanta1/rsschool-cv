@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var userAnswer;
+var correctAnswers = 0;
+
+function riddleGame(riddles, line, userAnswer){
+	userAnswer = prompt(riddles[line][0]);
+	userAnswer = userAnswer.toLowerCase();
+	var length = riddles[line].length;
+	for(var i = 1; i < length; i++){
+		if(userAnswer == riddles[line][i]){
+			alert("Поздравляю! Это правильный ответ!");
+			correctAnswers++;
+			break;
+		}
+	}
+	if(i == length){
+		alert("Ответ неверный. Увы!");
+	}
+}
+
+var riddles = [
+	["Отгадайте загадку №1: что зимой и летом одним цветом?", "ель", "елка"],
+	["Отгадайте загадку №2: висит груша - нельзя скушать. Что это?","лампочка", "лампочка ильича"],
+	["Отгадайте загадку №3: сидит дед, во сто шуб одет, кто его раздевает, тот слёзы проливает.", "лук"],
+	["Отгадайте загадку №4: без окон, без дверей, полна горница людей. Что это?", "огурец", "огурчик"],
+]
+
+riddleGame(riddles, 0, userAnswer);
+
+riddleGame(riddles, 1, userAnswer);
+
+riddleGame(riddles, 2, userAnswer);
+
+riddleGame(riddles, 3, userAnswer);
+
+alert("Игра окончена. Количество правильных ответов: " + correctAnswers + " из 4.")
+
+</script>
