@@ -6,7 +6,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
 html {
   scroll-behavior: smooth;
   background: url(assets/background_photo.jpg);
@@ -16,7 +16,7 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover;
 }
 
 body {
@@ -59,7 +59,7 @@ html, body {
   padding-left: 60px;
   padding-right: 50px;
 }
-  
+
 .section {
   width: 50%;
 }
@@ -116,7 +116,7 @@ h1 {
 
 .footer-container div {
   padding-right: 650px;
-} 
+}
 
 span {
   font-weight: bold;

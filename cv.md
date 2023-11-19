@@ -7,11 +7,11 @@
 * **Discord:** adamanta1
 
 # About me
-I'm 30 years old and currently I'm working as an English teacher online. I'm interested in coding and would really like to understand it better. Some time ago I even tried out a short online course for beginners, and it helped me a lot. My skills are still far from good, but I'm eager to continue learning and start a new inspiring career in the future. 
+I'm 30 years old and currently I'm working as an English teacher online. I'm interested in coding and would really like to understand it better. Some time ago I even tried out a short online course for beginners, and it helped me a lot. My skills are still far from good, but I'm eager to continue learning and start a new inspiring career in the future.
 
 # Education
-**Bachelor of Linguistics**  
-Togliatti State University  
+**Bachelor of Linguistics**
+Togliatti State University
 2011-2015
 
 # Languages
